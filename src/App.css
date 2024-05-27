@@ -1,38 +1,526 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+}
+.navbar {
+  background-color: black;
+  padding-left: 5px;
+  height:50px;
+  padding-top:20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar-brand {
   color: white;
+  padding-left:20px;
+  padding-right:10px;
+  font-family:"Minecraft";
+  font-weight:bolder;
+  font-size:larger;
 }
 
-.App-link {
-  color: #61dafb;
+.linkovi {
+  text-decoration: none;
+  padding-right: 10px;
+  margin-left:20px;
+}
+.link{
+  text-decoration: none;
+  color:yellow;
+  font-family: "Minecraft";
+}
+.link:hover{
+  text-decoration: none;
+  color:yellow;
+  font-family: "Minecraft";
+  background-color: gray;
+}
+.background-image {
+  background-image: url("home.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pro{
+  background-color: rgba(0,0,0,0.7);
+  width:100%;
+  height:300px;
+}
+.pro h1{
+  padding-top: 20px;
+  padding-left: 300px;
+  font-family: "Minecraft";
+  font-style: italic;
+  font-size:70px;
+  color:white;
+}
+.pro h2{
+  font-family: "Minecraft";
+  font-style: italic;
+    padding-left: 500px;
+  font-size:50px;
+  color:yellow;
+}
+.light-grayish {
+  background-color: #ddd;
+  padding:10px;
+  width: 1000px;
+  height: 175px; 
+  margin-top: 30px;  
+  margin-left:175px;
+  border:solid 3px gray;
+}
+.light-grayish h2{
+  font-family: "Minecraft";
+  font-weight: bold;
+  border-bottom: solid yellow 2px;
+  font-size: 40px;
+}
+.light-grayish p{
+  font-size: 30px;
+  font-family: "Minecraft";
+}
+
+
+.light-grayish_2{
+  background-color: #ddd;
+  padding:10px;
+  width: 1000px;
+  height: 250px; 
+  margin-top: 70px;  
+  margin-left:700px;
+  border:solid 3px gray;
+}
+.light-grayish_2 h2{
+  font-family: "Minecraft";
+  font-weight: bold;
+  border-bottom: solid yellow 2px;
+  font-size: 40px;
+}
+.light-grayish_2 p{
+  font-size: 30px;
+  font-family: "Minecraft";
+}
+.crna_crta{
+  width:100%;
+  height:160px;
+  background-color: black;
+}
+.crna_crta h2{
+  text-align: center;
+  padding-top: 40px;
+  color:white;
+  font-family: "Minecraft";
+  font-size: 55px;
+}
+.swords{
+  background-color: #ddd;
+  padding:10px;
+  width: 350px;
+  height: 380px; 
+  margin-top: 50px;
+  margin-right:225px;
+  margin-left: 125px;
+  border:solid 3px gray;
+  float:left;
+}
+.swords2{
+  background-color: #ddd;
+  padding:10px;
+  width: 350px;
+  height: 380px; 
+  margin-top: 50px;
+  margin-right:225px;
+  margin-left: 400px;
+  border:solid 3px gray;
+  float:left;
+}
+.slika{
+  width:350px;
+  height:350px;
+}
+.background-image2 {
+  background-image: url(meadow.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.link2{
+  text-decoration: none;
+  color:yellow;
+  font-family: "Minecraft";
+  font-size: 25px;
+  text-decoration: none;
+}
+.link2:hover{
+  text-decoration: none;
+  color:yellow;
+  font-family: "Minecraft";
+  background-color: rgb(9, 255, 0);
+}
+.swords p{font-family: "Minecraft";float:left;font-size: 25px;margin-right: 10px;}
+.swords2 p{font-family: "Minecraft";float:left;font-size: 25px;margin-right: 10px;}
+
+
+
+
+
+.crna_crta2{
+  width:100%;
+  height:120px;
+  background-color: black;
+}
+.crna_crta2 p{
+  text-align: center;
+  padding-top: 40px;
+  color:white;
+  font-family: "Minecraft";
+  font-size: 40px;
+  float:left;
+}
+.link3{
+  text-decoration: none;
+  color:yellow;
+  font-family: "Minecraft";
+  font-size: 50px;
+  text-decoration: none;
+  margin-top: 33px;
+  float:left;
+  margin-left: 20px;
+}
+.link3:hover{
+  text-decoration: none;
+  color:yellow;
+  font-family: "Minecraft";
+  background-color: rgb(9, 255, 0);
+}
+#input{
+  width:auto;
+  height:75px;
+  background-image: url("dirt2.png");
+  color:white;
+  font-family: "Minecraft";
+  font-size:30px;
+  margin-top: 15px;
+  border:yellow solid 3px;
+}
+.crna_crta3{
+  width:100%;
+  height:150px;
+  background-color: black;
+  border-top: solid yellow 3px;
+}
+.crna_crta3 p{
+  text-align: center;
+  padding-top: 45px;
+  color:white;
+  font-family: "Minecraft";
+  font-size: 40px;
+}
+.margina{
+  margin-left: 770px;
+  margin-top:30px;
+}
+.submit{
+  background-image: url("cobble.png");
+  font-size: 35px;
+  font-family: "Minecraft";
+  margin-top: 25px;;
+}
+
+
+
+
+
+
+.background-image-pvp{
+  background-image: url(pvp.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.bam{
+  background-color: rgba(0,0,0,0.7);
+  width:100%;
+  height:300px;
+}
+.bam h1{
+  padding-top: 20px;
+  padding-left: 420px;
+  padding-right: 40px;
+  font-family: "Minecraft";
+  font-style: italic;
+  font-size:55px;
+  color:white;
+  text-align: right;
+}
+.bam h2{
+  padding-top:100px;
+  padding-right:300px;
+  font-family: "Minecraft";
+  font-size:40px;
+  color:yellow;
+}
+.left{
+  float:left;
+  width:55%
+}
+.right{
+  float:right;
+  width:45%;
+}
+.plavo{
+  color:dodgerblue;
+  font-family: "Minecraft";
+}
+.light-grayish_pvp{
+  background-color: #ddd;
+  padding:10px;
+  width: 1230px;
+  height: 200px; 
+  margin-top: 70px;  
+  margin-left:100px;
+  border:solid 3px gray;
+}
+.light-grayish_pvp h2{
+  font-family: "Minecraft";
+  border-bottom: solid yellow 2px;
+  font-size: 40px;
+}
+.light-grayish_pvp p{
+  font-size: 25px;
+  font-family: "Minecraft";
+}
+.light-grayish_reset{
+  background-color: #ddd;
+  padding:10px;
+  width: 1230px;
+  height: 200px; 
+  margin-top: 20px;  
+  margin-left:500px;
+  border:solid 3px gray;
+}
+.light-grayish_reset h2{
+  text-align: right;
+  font-family: "Minecraft";
+  border-bottom: solid yellow 2px;
+  font-size: 40px;
+}
+.light-grayish_reset p{
+  font-size: 25px;
+  font-family: "Minecraft";
+}
+.siva{
+  width:100%;
+  background-color: white;
+  height:300px;
+  margin-bottom: 5px;
+}
+.eggs{
+  height:250px;
+  width: auto;
+  margin-top: 30px;
+  margin-left: 525px;
+}
+
+.light-grayish_knockback{
+  background-color: #ddd;
+  padding:10px;
+  width: 1230px;
+  height: 200px; 
+  margin-top: 10px;  
+  margin-left:350px;
+  border:solid 3px gray;
+}
+.light-grayish_knockback h2{
+  text-align: center;
+  font-family: "Minecraft";
+  border-bottom: solid yellow 2px;
+  font-size: 40px;
+}
+.light-grayish_knockback p{
+  font-size: 25px;
+  font-family: "Minecraft";
+}
+.background-image5 {
+  background-image: url(meadow.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.crna_crta5{
+  width:100%;
+  height:120px;
+  background-color: black;
+}
+.crna_crta5 p{
+  text-align: center;
+  padding-top: 40px;
+  color:white;
+  font-family: "Minecraft";
+  font-size: 40px;
+  float:left;
+}
+.blue{
+  width:100%;
+  background-color: lime;
+  height:300px;
+  margin-top:100px;
+  margin-bottom: 5px;
+}
+.background-image-rod {
+  background-image: url(fishing.png);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+
+.light-grayish_rod{
+  background-color: #ddd;
+  padding:10px;
+  width: 1230px;
+  height: 200px; 
+  margin-top: 20px;  
+  margin-left:600px;
+  border:solid 3px gray;
+}
+.light-grayish_rod h2{
+  text-align: right;
+  font-family: "Minecraft";
+  border-bottom: solid yellow 2px;
+  font-size: 40px;
+}
+.light-grayish_rod p{
+  font-size: 25px;
+  font-family: "Minecraft";
+}
+
+
+
+
+.light-grayish_rod_reset{
+  background-color: #ddd;
+  padding:10px;
+  width: 1230px;
+  height: 200px; 
+  margin-top: 50px;  
+  margin-left:100px;
+  border:solid 3px gray;
+}
+.light-grayish_rod_reset h2{
+  text-align: right;
+  font-family: "Minecraft";
+  border-bottom: solid yellow 2px;
+  font-size: 40px;
+}
+.light-grayish_rod_reset p{
+  font-size: 25px;
+  font-family: "Minecraft";
+}
+
+
+.light-grayish_knockback_2{
+  background-color: #ddd;
+  padding:10px;
+  width: 1230px;
+  height: 200px; 
+  margin-top: 100px;  
+  margin-left:350px;
+  border:solid 3px gray;
+}
+.light-grayish_knockback_2 h2{
+  text-align: center;
+  font-family: "Minecraft";
+  border-bottom: solid yellow 2px;
+  font-size: 40px;
+}
+.light-grayish_knockback_2 p{
+  font-size: 25px;
+  font-family: "Minecraft";
+}
+
+
+
+.light-grayish_build{
+  background-color: #ddd;
+  padding:10px;
+  width: 45%;
+  height: 400px; 
+  margin-top: 10px;  
+  margin-left:50px;
+  border:solid 3px gray;
+  float:left;
+}
+.light-grayish_build h2{
+  text-align: center;
+  font-family: "Minecraft";
+  border-bottom: solid yellow 2px;
+  font-size: 40px;
+}
+.light-grayish_build p{
+  font-size: 25px;
+  font-family: "Minecraft";
+}
+
+
+.light-grayish_build2{
+  background-color: #ddd;
+  padding:10px;
+  width: 45%;
+  height: 547px; 
+  margin-top: 10px;  
+  margin-left:50px;
+  border:solid 3px gray;
+  float:left;
+}
+.light-grayish_build2 h2{
+  text-align: center;
+  font-family: "Minecraft";
+  border-bottom: solid yellow 2px;
+  font-size: 40px;
+}
+.light-grayish_build2 p{
+  font-size: 25px;
+  font-family: "Minecraft";
+}
+.slika_b{
+  width:350px;
+  height:350px;
+}
+.building{
+  height:250px;
+  width:auto;
+  margin-left: 90px;
+  margin-right: 10px;
+}
+.building2{
+  height:250px;
+  width:auto;
+  margin-left: 95px;
+  margin-right: 10px;
+}
+.white{
+  width:100%;
+  height:300px;
 }
